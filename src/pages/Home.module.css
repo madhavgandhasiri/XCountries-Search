@@ -1,0 +1,31 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputDiv{
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(238, 233, 227);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);  
+}
+
+.inputDiv input{
+  width: 60%;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.cardDiv{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  width: 100%;
+}
