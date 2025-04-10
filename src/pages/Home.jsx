@@ -12,7 +12,6 @@ function Home() {
         "https://countries-search-data-prod-812920491762.asia-south1.run.app/countries"
       );
       const data = await res.json();
-      console.log(data);
       setCountries(data);
     } catch (error) {
       console.error(error);
@@ -22,7 +21,6 @@ function Home() {
   function handleSearch(e) {
     const value = e.target.value;
     setSearchText(value);
-    console.log(value);
   }
 
   const filteredCountries = countries.filter((country) =>
